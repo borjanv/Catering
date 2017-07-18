@@ -1,0 +1,117 @@
+﻿
+@import url("//www.purpleplumcatering.co.uk/wp-content/plugins/global-gallery/css/frontend.css");
+
+.gg_gallery_wrap .gg_container {
+    padding: 3px;}
+
+
+/* image border, radius and shadow */
+.gg_gallery_wrap .gg_img {
+    border: 15px solid #ffffff;    
+    border-radius: 25px;	
+    box-shadow: 0px 0px 2px rgba(25,25,25,0.6);}
+
+
+
+
+
+
+/* collections - texts under images */
+.gg_coll_img .gg_main_overlay_under .gg_img_title_under {
+    color: #fefefe;
+}
+.gg_coll_img .gg_main_overlay_under .gg_img_descr_under {
+    color: #f7f7f7;
+}
+
+/* collection filters + back to collection button */
+.gg_filter {
+    text-align: left;
+    padding: 0px 0px;
+}
+.gg_filter a.ggf,
+.gg_coll_back_to_new_style {	
+    color: #444444;
+}
+.gg_filter a.ggf:hover,
+.gg_coll_back_to_new_style:hover {	
+    color: #666666 !important;
+}
+.gg_filter a.ggf.gg_cats_selected,
+.gg_filter a.ggf.gg_cats_selected:hover {	
+    color: #222222 !important;;
+}
+.gg_new_filters a.ggf,
+.gg_coll_back_to_new_style {	
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border-radius: 2px;
+    
+    margin-left: 0px !important;
+}
+.gg_new_filters a.ggf:hover,
+.gg_coll_back_to_new_style:hover {	
+    background-color: #ffffff;
+    border: 1px solid #666666;
+}
+.gg_new_filters a.ggf.gg_cats_selected,
+.gg_new_filters a.ggf.gg_cats_selected:hover {	
+    background-color: #ffffff;
+    border: 1px solid #555555;
+}
+
+
+/* ************************************************** */
+
+/* standard gallery images */
+.gg_standard_gallery .gg_img {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* masonry gallery images */
+.gg_masonry_gallery .gg_img {
+    margin-left: 3px;
+    margin-right: 4px;
+    margin-bottom: 7px;
+}
+
+/* photostring gallery images */
+.gg_string_gallery .gg_img {
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+
+/* collection images */
+.gg_collection_wrap .gg_coll_container .gg_img {
+    margin-right: 7px;
+    margin-left: 8px;
+    margin-bottom: 15px;
+}
+
+/* pagination button alignment */
+.gg_paginate {
+    text-align: center;
+}
+
+
+/* ************************************************** */
+
+
+
+.gg_galleria_slider_wrap .galleria-thumbnails .galleria-image {
+    width: 60px !important;
+}
+.gg_galleria_slider_wrap .galleria-thumbnails .galleria-image,
+.gg_galleria_slider_wrap .galleria-thumbnails-container {
+    height: 40px !important;
+}
+.gg_galleria_slider_wrap.gg_galleria_slider_show_thumbs {
+    padding-bottom: 54px !important;	
+}
+.gg_galleria_slider_show_thumbs .galleria-thumbnails-container {
+    bottom: -52px !important;		
+}
+
+
+

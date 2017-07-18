@@ -1,8 +1,188 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
     Layout = null;
-	var home = @CurrentPage.Site();
+    var content = Model.Content;
 }
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>
+        @(!content.HasValue("metaTitle") ? content.Name : content.GetPropertyValue("metaTitle"))
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link href="~/css/style2.css" rel="stylesheet" />
+    <link href="~/css/FontAweasome.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon-precomposed" href="">
+
+    <!-- For iPhone 4 Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+
+    <!-- For iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+
+    <!-- For iPad Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+
+    <meta name="description" content="@content.HasValue("metaDescription")" />
+    <meta name="robots" content="noodp" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="@(!content.HasValue("metaTitle") ? content.Name : content.GetPropertyValue("metaTitle"))" />
+    <meta property="og:description" content="@content.HasValue("metaDescription")" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Purple Plum Catering" />
+    <meta property="article:publisher" content="" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="@content.HasValue("metaDescription")" />
+    <meta name="twitter:title" content="@(!content.HasValue("metaTitle") ? content.Name : content.GetPropertyValue("metaTitle"))" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:creator" content="" />
+    <!-- / Yoast SEO plugin. -->
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='gg-custom-css-css' href='/css/custom.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='gg-slider-css-css' href='/css/galleria.lcweb.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='gg-lightbox-css-css' href='/css/lightbox.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='layerslider-css' href='/css/layerslider.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='ls-google-fonts-css' href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900|Open+Sans:300|Indie+Flower:regular|Oswald:300,regular,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet" />
+    @*<!--[if lte IE 9]>
+        <link rel='stylesheet' id='avada-shortcodes-css'  href='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/shortcodes.css?ver=4.4.10' type='text/css' media='all' />
+        <![endif]-->
+        <link rel='stylesheet' id='avada-animations-css' href='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/css/animations.css?ver=4.4.10' type='text/css' media='all' />
+        <!--[if lte IE 8]>
+        <link rel='stylesheet' id='avada-IE8-css'  href='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/css/ie8.css?ver=4.4.10' type='text/css' media='all' />
+        <![endif]-->
+        <!--[if IE]>
+        <link rel='stylesheet' id='avada-IE-css'  href='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/css/ie.css?ver=4.4.10' type='text/css' media='all' />
+        <![endif]-->*@
+    @*<link rel='stylesheet' id='avada-media-css' href='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/css/media.css?ver=4.4.10' type='text/css' media='all' />
+        <link rel='stylesheet' id='avada-ipad-css' href='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/css/ipad.css?ver=4.4.10' type='text/css' media='all' />*@
+    <script type='text/javascript' src='/scripts/jQueryMin.js'></script>
+    <script type='text/javascript' src='/scripts/jQueryMigrate.js'></script>
+    <script type='text/javascript' src='/scripts/layerslider.js'></script>
+    @*<script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.2'></script>*@
+    @*<script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.1.1'></script>*@
+    @*<link rel='https://api.w.org/' href='http://www.purpleplumcatering.co.uk/wp-json/' />*@
+    <meta name="generator" content="WordPress 4.4.10" />
+    @*<link rel="alternate" type="application/json+oembed" href="http://www.purpleplumcatering.co.uk/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.purpleplumcatering.co.uk%2Fwedding-venue%2F" />
+        <link rel="alternate" type="text/xml+oembed" href="http://www.purpleplumcatering.co.uk/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.purpleplumcatering.co.uk%2Fwedding-venue%2F&#038;format=xml" />*@
+</head>
+<body class="page page-id-5594 page-template page-template-full-width page-template-full-width-php no-tablet-sticky-header no-mobile-sticky-header no-mobile-totop" data-spy="scroll">
+    <div id="wrapper" class="">
+        @Umbraco.RenderMacro("Header");
+        @RenderBody()
+        <footer id="footer">
+            <div class="avada-row">
+                <div class="copyright-area-content">
+                    <div class="copyright">
+                        <div>Copyright @DateTime.Now.Year Purple Plum Catering | All Rights Reserved </div>
+                    </div>
+                    <div class="fusion-social-links-footer">
+                        <div class="fusion-social-networks boxed-icons">
+                            <a class="fusion-social-network-icon fusion-tooltip fusion-facebook icon-facebook" style="color:#4c393f;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="https://www.facebook.com/purpleplumcatering.norwich" target="_blank" data-placement="top" data-title="Facebook" data-toggle="tooltip"></a>
+                            <a class="fusion-social-network-icon fusion-tooltip fusion-twitter icon-twitter" style="color:#4c393f;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="http://twitter.com/purpleplumcater" target="_blank" data-placement="top" data-title="Twitter" data-toggle="tooltip"></a>
+                            <a class="fusion-social-network-icon fusion-tooltip fusion-youtube icon-youtube" style="color:#4c393f;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="https://www.youtube.com/channel/UCSn8QWyxEwP58D7JBjuwmcw" target="_blank" data-placement="top" data-title="Youtube" data-toggle="tooltip"></a>
+                            <a class="fusion-social-network-icon fusion-tooltip fusion-instagram icon-instagram" style="color:#4c393f;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="http://instagram.com/purpleplumcatering" target="_blank" data-placement="top" data-title="Instagram" data-toggle="tooltip"></a>
+                            <a class="fusion-social-network-icon fusion-tooltip fusion-pinterest icon-pinterest" style="color:#4c393f;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="https://www.pinterest.com/purpleplumcater/" target="_blank" data-placement="top" data-title="Pinterest" data-toggle="tooltip"></a>
+                            <a class="fusion-social-network-icon fusion-tooltip fusion-googleplus icon-googleplus" style="color:#4c393f;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="https://plus.google.com/+PurpleplumcateringCoUk01/about" target="_blank" data-placement="top" data-title="Googleplus" data-toggle="tooltip"></a>
+                            <a class="fusion-social-network-icon fusion-tooltip fusion-linkedin icon-linkedin" style="color:#4c393f;background-color:#ffffff;border-color:#ffffff;border-radius:4px;" href="https://www.linkedin.com/company/purpleplum-catering" target="_blank" data-placement="top" data-title="Linkedin" data-toggle="tooltip"></a>
+                            <div class="fusion-clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <!-- W3TC-include-js-head -->
+
+    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/plugins/global-gallery/js/frontend.js?ver=3.12'></script>
+    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-includes/js/comment-reply.min.js?ver=4.4.10'></script>
+    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/js/modernizr-min.js'></script>
+    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/js/jquery.carouFredSel-6.2.1-min.js'></script>
+    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/js/jquery.prettyPhoto-min.js'></script>
+    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/js/jquery.flexslider-min.js'></script>
+    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/js/jquery.fitvids-min.js'></script>
+    @*<script type='text/javascript' src='/scripts/main.js'></script>*@
+    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-includes/js/wp-embed.min.js?ver=4.4.10'></script>
+    <script type="text/javascript" src="/scripts/jquery.tabslet.min.js"></script>
+    <script type="text/javascript" src="~/scripts/collapsible.js"></script>
+    <script src="http://www.purpleplumcatering.co.uk/wp-content/plugins/global-gallery/js/lightboxes/lcweb.lightbox/TouchSwipe/jquery.touchSwipe.min.js" type="text/javascript"></script>
+    <script src="http://www.purpleplumcatering.co.uk/wp-content/plugins/global-gallery/js/lightboxes/lcweb.lightbox/lcweb.lightbox.min.js" type="text/javascript"></script>
+    <div id="gg_simple_loader"></div>
+
+    <script type="text/javascript">
+        jQuery('body').delegate('.gg_linked_img', 'click', function () {
+            var link = jQuery(this).attr('gg-link');
+            window.open(link, '_top');
+        });
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('body').delegate('.gg_gallery_wrap *, .gg_galleria_slider_wrap *, #lcl_wrapper *', "contextmenu", function (e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+    <style type="text/css">
+        .gg_gallery_wrap *, .gg_galleria_slider_wrap *, #lcl_wrapper * {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+        }
+    </style>
+    <script type="text/javascript">
+        gg_use_deeplink = true;
+        gg_masonry_max_w = 920;
+    </script>
+<script type="text/javascript">
+    jQuery('#open').collapsible('accordion-open', {
+        contentOpen: 1
+    });
+    jQuery(".no-link").click(function(e) {
+        e.preventDefault();
+    });
+    jQuery(document).ready(function () {
+        jQuery('.tabs').tabslet();
+    });
+    
+
+    // global vars
+    gg_galleria_toggle_info = false;
+    gg_galleria_fx = 'fadeslide';
+    gg_galleria_fx_time = 400;
+    gg_galleria_img_crop = true;
+    gg_galleria_autoplay = false;
+    gg_galleria_interval = 3000;
 
 
-    @RenderBody()
+    // Load the LCweb theme
+    Galleria.loadTheme('http://www.purpleplumcatering.co.uk/wp-content/plugins/global-gallery/js/jquery.galleria/themes/lcweb/galleria.lcweb.js');
+</script>
+</body>
+</html>

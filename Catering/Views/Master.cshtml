@@ -71,27 +71,10 @@
     <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="~/css/style.css" rel="stylesheet" />
-    @*<!--[if lte IE 9]>
-        <link rel='stylesheet' id='avada-shortcodes-css'  href='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/shortcodes.css?ver=4.4.10' type='text/css' media='all' />
-        <![endif]-->
-        <link rel='stylesheet' id='avada-animations-css' href='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/css/animations.css?ver=4.4.10' type='text/css' media='all' />
-        <!--[if lte IE 8]>
-        <link rel='stylesheet' id='avada-IE8-css'  href='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/css/ie8.css?ver=4.4.10' type='text/css' media='all' />
-        <![endif]-->
-        <!--[if IE]>
-        <link rel='stylesheet' id='avada-IE-css'  href='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/css/ie.css?ver=4.4.10' type='text/css' media='all' />
-        <![endif]-->*@
-    @*<link rel='stylesheet' id='avada-media-css' href='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/css/media.css?ver=4.4.10' type='text/css' media='all' />
-        <link rel='stylesheet' id='avada-ipad-css' href='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/css/ipad.css?ver=4.4.10' type='text/css' media='all' />*@
+    @RenderSection("header", false);
     <script type='text/javascript' src='/scripts/jQueryMin.js'></script>
     <script type='text/javascript' src='/scripts/jQueryMigrate.js'></script>
     <script type='text/javascript' src='/scripts/layerslider.js'></script>
-    @*<script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.2'></script>*@
-    @*<script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.1.1'></script>*@
-    @*<link rel='https://api.w.org/' href='http://www.purpleplumcatering.co.uk/wp-json/' />*@
-    <meta name="generator" content="WordPress 4.4.10" />
-    @*<link rel="alternate" type="application/json+oembed" href="http://www.purpleplumcatering.co.uk/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.purpleplumcatering.co.uk%2Fwedding-venue%2F" />
-        <link rel="alternate" type="text/xml+oembed" href="http://www.purpleplumcatering.co.uk/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.purpleplumcatering.co.uk%2Fwedding-venue%2F&#038;format=xml" />*@
 </head>
 <body class="page page-id-5594 page-template page-template-full-width page-template-full-width-php no-tablet-sticky-header no-mobile-sticky-header no-mobile-totop" data-spy="scroll">
     <div id="wrapper" class="">
@@ -117,51 +100,16 @@
                     </div>
                 </div>
             </div>
-
         </footer>
     </div>
     <!-- W3TC-include-js-head -->
-
-    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/plugins/global-gallery/js/frontend.js?ver=3.12'></script>
-    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-includes/js/comment-reply.min.js?ver=4.4.10'></script>
-    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/js/modernizr-min.js'></script>
-    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/js/jquery.carouFredSel-6.2.1-min.js'></script>
-    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/js/jquery.prettyPhoto-min.js'></script>
-    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/js/jquery.flexslider-min.js'></script>
-    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-content/themes/PurplePlum/js/jquery.fitvids-min.js'></script>
-    @*<script type='text/javascript' src='/scripts/main.js'></script>*@
-    <script type='text/javascript' src='http://www.purpleplumcatering.co.uk/wp-includes/js/wp-embed.min.js?ver=4.4.10'></script>
     <script type="text/javascript" src="/scripts/jquery.tabslet.min.js"></script>
-    <script type="text/javascript" src="~/scripts/collapsible.js"></script>
-    <script src="http://www.purpleplumcatering.co.uk/wp-content/plugins/global-gallery/js/lightboxes/lcweb.lightbox/TouchSwipe/jquery.touchSwipe.min.js" type="text/javascript"></script>
-    <script src="http://www.purpleplumcatering.co.uk/wp-content/plugins/global-gallery/js/lightboxes/lcweb.lightbox/lcweb.lightbox.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="~/scripts/collapsible.js"></script>
+    @RenderSection("scripts", false);
     <div id="gg_simple_loader"></div>
 
-    <script type="text/javascript">
-        jQuery('body').delegate('.gg_linked_img', 'click', function () {
-            var link = jQuery(this).attr('gg-link');
-            window.open(link, '_top');
-        });
-    </script>
-    <script type="text/javascript">
-        jQuery(document).ready(function () {
-            jQuery('body').delegate('.gg_gallery_wrap *, .gg_galleria_slider_wrap *, #lcl_wrapper *', "contextmenu", function (e) {
-                e.preventDefault();
-            });
-        });
-    </script>
-    <style type="text/css">
-        .gg_gallery_wrap *, .gg_galleria_slider_wrap *, #lcl_wrapper * {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-        }
-    </style>
-    <script type="text/javascript">
-        gg_use_deeplink = true;
-        gg_masonry_max_w = 920;
-    </script>
 <script type="text/javascript">
-    jQuery('#open').collapsible('accordion-open', {
+    jQuery('.open-collapse').collapsible('accordion-open', {
         contentOpen: 1
     });
     jQuery(".no-link").click(function(e) {
@@ -170,19 +118,7 @@
     jQuery(document).ready(function () {
         jQuery('.tabs').tabslet();
     });
-    
 
-    // global vars
-    gg_galleria_toggle_info = false;
-    gg_galleria_fx = 'fadeslide';
-    gg_galleria_fx_time = 400;
-    gg_galleria_img_crop = true;
-    gg_galleria_autoplay = false;
-    gg_galleria_interval = 3000;
-
-
-    // Load the LCweb theme
-    Galleria.loadTheme('http://www.purpleplumcatering.co.uk/wp-content/plugins/global-gallery/js/jquery.galleria/themes/lcweb/galleria.lcweb.js');
 </script>
 </body>
 </html>

@@ -1,3 +1,27 @@
 ﻿@model Menu
 
+<div class="panel-group open-collapse" id="open">
+    <h4 class="panel-title toggle">
+        <a data-toggle="collapse" data-parent="#accordion-1" href="#" class="no-link">
+            <i class="fa-fusion-box"></i>@(!string.IsNullOrEmpty(Model.PageTitle) ? Model.PageTitle : Model.Name)
+        </a>
+    </h4>
+    <div class="">
+        <div class="panel-body toggle-content">
+            <div class="col content-wrapper-background" style="background-color: #ddeeca; padding-top: 15px;">
+                <div class="heading heading-with-icon">
+                    <div class="icon">
+                        <i style="background-color: #4c393f; color: #ffffff;" class="fa fontawesome-icon medium fa-cutlery circle-yes"></i>
+                    </div>
+                    <h2 class="content-box-heading" style="text-align: center">@(!string.IsNullOrEmpty(Model.PageTitle) ? Model.PageTitle : Model.Name)</h2>
+                </div>
+                <div class="content-container menu-container">
+                    @Model.GetGridHtml(Html, "pageBody")
+                </div>
+            </div>
+            <div class="fusion-clearfix"></div>
+            <div class="fusion-clearfix"></div>
+        </div>
+    </div>
+</div>
 

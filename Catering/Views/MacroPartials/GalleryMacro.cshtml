@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@{
+    var model = new Gallery(Model.Content);
+    if (model.GalleryFolder.Any())
+    {
+        var images = model.GalleryFolder.First().Descendants<Image>();
+
+        <div class="gallery-container container">
+            @foreach (var imageGroup in images.InGroupsOf(4))
+                {
+                <div class="row">
+                    @foreach (var image in imageGroup)
+                    {
+                        <div class="thumbnail-container col-md-3">
+                            <a data-fancybox="gallery" href="@image.Url"><img src="@image.GetCropUrl("GalleryThumb")"></a>
+                        </div>
+                    }
+                </div>
+
+            }
+        </div>
+    }
+}
+
+

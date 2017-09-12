@@ -3,7 +3,7 @@
 }
 
 html, body {
-    background-color: #e6ede6;
+    background-color: #f4f4f4;
 }
 
 /*IE11 hack */
@@ -26,7 +26,7 @@ html, body {
 }
 
 a:hover, .tooltip-shortcode {
-    color: #4C393F;
+    color: #444;
 }
 
 #nav ul .current_page_item a, #nav ul .current-menu-item a, #nav ul > .current-menu-parent a,
@@ -62,16 +62,16 @@ h5.toggle:hover a,
 .cart_totals .order-total .amount, form.checkout .shop_table tfoot .order-total .amount, #final-order-details .mini-order-details tr:last-child .amount, .rtl .more a:hover:before, .rtl .read-more:hover:before, .rtl .entry-read-more a:hover:before, #header-sticky .my-cart-link-active:after, .header-wrapper .my-cart-link-active:after, #wrapper #sidebar .current_page_item > a, #wrapper #sidebar .current-menu-item > a, #wrapper #sidebar .current_page_item > a:before, #wrapper #sidebar .current-menu-item > a:before, #wrapper .footer-area .current_page_item > a, #wrapper .footer-area .current-menu-item > a, #wrapper .footer-area .current_page_item > a:before, #wrapper .footer-area .current-menu-item > a:before, #wrapper #slidingbar-area .current_page_item > a, #wrapper #slidingbar-area .current-menu-item > a, #wrapper #slidingbar-area .current_page_item > a:before, #wrapper #slidingbar-area .current-menu-item > a:before, .side-nav ul > li.current_page_item > a, .side-nav li.current_page_ancestor > a,
 .gform_wrapper span.ginput_total, .gform_wrapper span.ginput_product_price, .ginput_shipping_price,
 .bbp-topics-front ul.super-sticky a:hover, .bbp-topics ul.super-sticky a:hover, .bbp-topics ul.sticky a:hover, .bbp-forum-content ul.sticky a:hover, .fusion-accordian .panel-title a:hover {
-    color: #4C393F;
+    color: #444;
 }
 
 .fusion-content-boxes .heading-link:hover h2 {
-    color: #4C393F !important;
+    color: #444 !important;
 }
 
 .fusion-content-boxes .heading-link:hover .icon i, .fusion-accordian .panel-title a:hover .fa-fusion-box {
-    background-color: #4C393F !important;
-    border-color: #4C393F !important;
+    background-color: #444 !important;
+    border-color: #444 !important;
 }
 
 #sidebar .image .image-extras .image-extras-content a:hover {
@@ -79,7 +79,7 @@ h5.toggle:hover a,
 }
 
 .star-rating:before, .star-rating span:before {
-    color: #4C393F;
+    color: #444;
 }
 
 .tagcloud a:hover, #slidingbar-area .tagcloud a:hover, .footer-area .tagcloud a:hover {
@@ -105,7 +105,7 @@ h5.toggle:hover a,
 .tagcloud a:hover, #header-sticky .my-account-link:hover:after, #header .my-account-link:hover:after, body #header-sticky .my-account-link-active:after, body #header .my-account-link-active:after,
 #bbpress-forums div.bbp-topic-tags a:hover,
 .fusion-tabs .nav-tabs > .active > .tab-link:hover, .fusion-tabs .nav-tabs > .active > .tab-link:focus, .fusion-tabs .nav-tabs > .active > .tab-link, .fusion-tabs.vertical-tabs .nav-tabs > li.active > .tab-link {
-    border-color: #4C393F;
+    border-color: #444;
 }
 
 #wrapper .main-nav-search a:hover {
@@ -117,19 +117,19 @@ h5.toggle:hover a,
 }
 
 #nav ul .current-menu-ancestor a, .navigation li.current-menu-ancestor a, #sticky-nav li.current-menu-ancestor a {
-    color: #4C393F;
+    color: #444;
 }
 
 #wrapper .side-nav li.current_page_item a {
-    border-right-color: #4C393F;
+    border-right-color: #444;
 }
 
 .rtl #wrapper .side-nav li.current_page_item a {
-    border-left-color: #4C393F;
+    border-left-color: #444;
 }
 
 .header-v2 .header-social, .header-v3 .header-social, .header-v4 .header-social, .header-v5 .header-social, .header-v2 {
-    border-top-color: #4C393F;
+    border-top-color: #444;
 }
 
 .fusion-accordian .panel-title .active .fa-fusion-box,
@@ -150,11 +150,11 @@ ul.circle-yes li:before,
 ul.arrow li:before,
 p.demo_store,
 .avada-myaccount-data .digital-downloads li:before, .avada-thank-you .order_details li:before {
-    background-color: #4C393F;
+    background-color: #444;
 }
 
 .woocommerce .social-share li a:hover i {
-    border-color: #4C393F;
+    border-color: #444;
 }
 
 .bbp-topics-front ul.super-sticky, .bbp-topics ul.super-sticky, .bbp-topics ul.sticky, .bbp-forum-content ul.sticky {
@@ -200,32 +200,32 @@ body #header-sticky.sticky-header .sticky-shadow {
 }
 
 #header, #small-nav {
-    background-color: #e6ede6;
+    background-color: #f4f4f4;
 }
 
 #main, #wrapper,
 .fusion-separator .icon-wrapper, html, body, .bbp-arrow {
-    background-color: #e6ede6;
+    background-color: #f4f4f4;
 }
 
 .footer-area {
-    background-color: #e6ede6;
+    background-color: #f4f4f4;
 }
 
 #wrapper .footer-area .pyre_tabs .tab-holder .tabs li {
-    border-color: #e6ede6;
+    border-color: #f4f4f4;
 }
 
 .footer-area {
-    border-color: #e6ede6;
+    border-color: #f4f4f4;
 }
 
 #footer {
-    background-color: #4C393F;
+    background-color: #444;
 }
 
 #footer {
-    border-color: #4C393F;
+    border-color: #444;
 }
 
 .sep-boxed-pricing .panel-heading {
@@ -788,12 +788,12 @@ body #toTop:before {
 
 #nav ul .current_page_item a, #nav ul .current-menu-item a, #nav ul > .current-menu-parent a, #nav ul ul, .navigation li.current-menu-ancestor a, #nav ul li a:hover,
 #sticky-nav ul .current_page_item a, #sticky-nav ul .current-menu-item a, #sticky-nav ul > .current-menu-parent a, #sticky-nav ul ul, #sticky-nav li.current-menu-ancestor a, .navigation li.current-menu-ancestor a, #sticky-nav ul li a:hover {
-    color: #ddedca;
-    border-color: #ddedca;
+    color: #abc33f;
+    border-color: #abc33f;
 }
 
 #nav ul ul, #sticky-nav ul ul {
-    border-color: #ddedca;
+    border-color: #abc33f;
 }
 
 #wrapper .main-nav-search a:hover {
@@ -1032,7 +1032,7 @@ ul.navigation > li:last-child ul ul {
 
 
 #wrapper .header-social {
-    background-color: #4C393F;
+    background-color: #444;
 }
 
     #wrapper .header-social .menu > li {
@@ -1126,7 +1126,7 @@ body #sidebar .tab-hold .tabs li.active a {
 }
 
 body #sidebar .tab-hold .tabs li.active a {
-    border-top-color: #4C393F;
+    border-top-color: #444;
 }
 
 .fusion-sharing-box {
@@ -1171,14 +1171,14 @@ body #sidebar .tab-hold .tabs li.active a {
 
 
 .quicktags-toolbar input {
-    background: linear-gradient(to top, #e6ede6, #ffffff ) #3E3E3E;
-    background: -o-linear-gradient(to top, #e6ede6, #ffffff ) #3E3E3E;
-    background: -moz-linear-gradient(to top, #e6ede6, #ffffff ) #3E3E3E;
-    background: -webkit-linear-gradient(to top, #e6ede6, #ffffff ) #3E3E3E;
-    background: -ms-linear-gradient(to top, #e6ede6, #ffffff ) #3E3E3E;
-    background: linear-gradient(to top, #e6ede6, #ffffff ) #3E3E3E;
-    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #e6ede6) );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6ede6') progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    background: linear-gradient(to top, #f4f4f4, #ffffff ) #3E3E3E;
+    background: -o-linear-gradient(to top, #f4f4f4, #ffffff ) #3E3E3E;
+    background: -moz-linear-gradient(to top, #f4f4f4, #ffffff ) #3E3E3E;
+    background: -webkit-linear-gradient(to top, #f4f4f4, #ffffff ) #3E3E3E;
+    background: -ms-linear-gradient(to top, #f4f4f4, #ffffff ) #3E3E3E;
+    background: linear-gradient(to top, #f4f4f4, #ffffff ) #3E3E3E;
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #f4f4f4) );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4') progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
     border: 1px solid #d2d2d2;
     color: #aaa9a9;
 }
@@ -1284,7 +1284,7 @@ body #sidebar .tab-hold .tabs li.active a {
 }
 
 .header-v4 #small-nav, .header-v5 #small-nav {
-    background-color: #4C393F;
+    background-color: #444;
 }
 
 #header .logo, .rtl #header .logo {

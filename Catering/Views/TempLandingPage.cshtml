@@ -1,0 +1,27 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+<div id="sliders-container">
+</div>
+<div id="main" class="clearfix " style="">
+    <div class="avada-row" style="">
+        <div id="content" class="full-width">
+            <div id="post-@Model.Content.Id" class="post-@Model.Content.Id page type-page status-publish hentry">
+                <div class="post-content">
+                    <h1 style="text-align:center;">Welcome to Coconut Catering London</h1>
+                    <div class="temp-container">
+                        <img src="@Umbraco.TypedMedia(1122).GetCropUrl("WideImage")"/>
+                        <div class="intro">
+                            <h2>Full site coming soon...</h2>
+                            <p>Feel free to contact us in the meantime.</p>
+                            <p>+4412345678</p>
+                            <p>info@coconutcatering.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

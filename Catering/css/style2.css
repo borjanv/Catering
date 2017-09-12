@@ -18426,19 +18426,22 @@ HEADER H2 {
 
 .event-container {
     padding: 15px;
-    
 }
+
 .event-content .container, .menu-container .container {
     width: 100% !important;
     padding: 0 !important;
 }
+
 .tabs UL.horizontal {
     list-style: none outside none;
     margin: 0;
 }
+
 .tabs ul {
     padding: 0;
 }
+
 .tabs LI {
     background: white;
     border-bottom: 4px solid #E5E5E5;
@@ -18446,7 +18449,7 @@ HEADER H2 {
     display: inline-block;
 }
 
-.tabs A {   
+.tabs A {
     display: block;
     font-size: 18px;
     font-weight: 300;
@@ -18543,6 +18546,39 @@ HEADER H2 {
         color: #FFF;
         border-bottom-color: #68a697;
     }
-    .gallery-container .row {
-        margin-bottom: 20px;
+
+.gallery-container .row {
+    margin-bottom: 20px;
+}
+
+.logo-text {
+    font-family: 'Poly', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top:0;
+}
+
+.secondary-logo-text {
+    font-size: 38px;
+    font-family: 'Poly', serif;
+    margin-top: 0;
+}
+
+.temp-container {
+    position: relative;
+}
+
+.intro {
+    position: absolute;
+    bottom: 20px;
+    padding: 20px;
+    left: 20px;
+    background-color: rgba(171,195,63,0.65);
+    color: #fff;
+}
+
+    .intro h2 {
+        font-size: 28px !important;
+        font-weight: bold !important;
+        color: #fff !important;
     }
